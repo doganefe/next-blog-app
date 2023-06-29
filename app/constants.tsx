@@ -1,4 +1,4 @@
-const navLinks = ["Blog", "Projects", "About", "Newsletter", "Dark Mode"];
+const navLinks = ["Blog", "Projects", "About", "Newsletter"];
 
 const footerLinks = [
   "© 2023",

@@ -1,21 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background-color: white;
-  --primary-color: black;
-  --secondary-color: #667085;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: black;
-    --primary-color: white;
-  }
-}
-
-body {
-  color: var(--primary-color);
-  background-color: var(--background-color);
-}

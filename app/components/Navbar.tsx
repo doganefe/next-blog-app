@@ -1,4 +1,7 @@
+"use client";
+
 import { navLinks } from "../constants";
+import ThemeToggler from "./ThemeToggle";
 
 const Navbar = () => {
   return (
@@ -10,6 +13,7 @@ const Navbar = () => {
             {link}
           </li>
         ))}
+        <ThemeToggler />
       </ul>
     </nav>
   );

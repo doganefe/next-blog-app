@@ -1,6 +1,11 @@
 import AllPosts from "./components/AllPosts";
 import RecentPosts from "./components/RecentPosts";
 
+export const metadata = {
+  title: "Doğan Blog",
+  description: "Teknolojiye dair içerikler",
+};
+
 export default function Home() {
   return (
     <main className="flex flex-col gap-6 space-y-3">

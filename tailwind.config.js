@@ -12,6 +12,8 @@ module.exports = {
       blue: "#3538CD",
       pink: "#C11574",
       green: "#027A48",
+      black: "#000000",
+      white: "#ffffff",
     },
     extend: {
       backgroundImage: {
@@ -21,5 +23,6 @@ module.exports = {
       },
     },
   },
+  darkMode: "class",
   plugins: [],
 };
