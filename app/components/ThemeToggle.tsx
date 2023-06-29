@@ -21,11 +21,8 @@ function MyToggle() {
         <Switch
           checked={theme === "dark"}
           onChange={(checked) => {
-            if (checked) {
-              setTheme("dark");
-            } else {
-              setTheme("light");
-            }
+            if (checked) setTheme("dark");
+            else setTheme("light");
           }}
         >
           <span
