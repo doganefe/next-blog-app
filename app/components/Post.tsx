@@ -15,7 +15,7 @@ const Post = ({ classes = "", imgWidth, imgHeight, index }: PostProps) => {
         alt="blog img"
         width={imgWidth}
         height={imgHeight}
-        className="object-cover flex-1"
+        className="object-cover flex-1 w-auto h-auto"
       />
       <div className="flex flex-col gap-2 flex-1">
         <p className="text-purple font-medium text-sm">
