@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  basePath: "/next-blog-app",
+  experimental: {
+    appDir: true,
+  },
   images: {
     remotePatterns: [
       {
