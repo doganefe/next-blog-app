@@ -1,9 +1,15 @@
-import { useState, Fragment } from "react";
+import { useState, useEffect, Fragment } from "react";
 import { Switch } from "@headlessui/react";
 import { isDarkMode, setDarkMode } from "../utils";
 
 function MyToggle() {
-  const [enabled, setEnabled] = useState(isDarkMode());
+  const [enabled, setEnabled] = useState(false);
+
+  useEffect(() => {
+    if (isDarkMode()) {
+      setEnabled(true);
+    }
+  }, []);
 
   return (
     <Switch
