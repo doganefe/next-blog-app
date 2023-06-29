@@ -1,10 +1,16 @@
 function isDarkMode() {
-  const darkMode = localStorage.getItem("dark_mode");
-  return darkMode ? true : false;
+  if (typeof window !== "undefined") {
+    const darkMode = localStorage.getItem("dark_mode");
+    return darkMode ? true : false;
+  } else {
+    return false;
+  }
 }
 
 function setDarkMode(mode: string) {
-  localStorage.setItem("dark_mode", mode);
+  if (typeof window !== "undefined") {
+    localStorage.setItem("dark_mode", mode);
+  }
 }
 
 export { isDarkMode, setDarkMode };
