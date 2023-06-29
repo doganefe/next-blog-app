@@ -29,8 +29,8 @@ function MyToggle() {
           <span className="sr-only">Enable notifications</span>
           <span
             className={`${
-              checked ? "translate-x-6 bg-black" : "translate-x-1"
-            } inline-block h-4 w-4 transform rounded-full bg-white transition`}
+              checked ? "translate-x-6 bg-black" : "translate-x-1 bg-white "
+            } inline-block h-4 w-4 transform rounded-full transition`}
           />
         </button>
       )}
