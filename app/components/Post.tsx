@@ -5,9 +5,18 @@ interface PostProps {
   imgWidth: number;
   imgHeight: number;
   index: number;
+  title: string;
+  description: string;
 }
 
-const Post = ({ classes = "", imgWidth, imgHeight, index }: PostProps) => {
+const Post = ({
+  classes = "",
+  imgWidth,
+  imgHeight,
+  index,
+  title,
+  description,
+}: PostProps) => {
   return (
     <div className={`flex gap-5 ${classes} max-md:flex-col`}>
       <Image
@@ -15,17 +24,14 @@ const Post = ({ classes = "", imgWidth, imgHeight, index }: PostProps) => {
         alt="blog img"
         width={imgWidth}
         height={imgHeight}
-        className="object-cover flex-1 w-auto h-auto"
+        className="object-cover flex-1"
       />
       <div className="flex flex-col gap-2 flex-1">
         <p className="text-purple font-medium text-sm">
           Olivia Rhye - 1 Jan 2023
         </p>
-        <h3 className="text-2xl font-medium">UX review presentations</h3>
-        <p className="text-textColor">
-          How do you create compelling presentations that wow your colleagues
-          and impress your managers?
-        </p>
+        <h3 className="text-2xl font-medium">{title}</h3>
+        <p className="text-textColor">{description}</p>
         <ul className="flex gap-3">
           <li className="text-purple rounded-xl px-2 py-1 bg-purple bg-opacity-5 text-xs">
             Design
